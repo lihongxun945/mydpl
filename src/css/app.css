@@ -1,0 +1,343 @@
+/*! normalize.css v2.1.0 | MIT License | git.io/normalize */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden] {
+  display: none;
+}
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+pre {
+  white-space: pre-wrap;
+}
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 0;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+button,
+input {
+  line-height: normal;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.icon-error-s,
+.icon-error,
+.icon-success-s,
+.icon-success,
+.icon-light-s,
+.icon-light,
+.icon-question-s,
+.icon-question,
+.icon-info,
+.icon-info-s,
+.icon-sound-s,
+.icon-sound,
+.icon-bell-s,
+.icon-bell,
+.icon-forbidden-s,
+.icon-forbidden {
+  display: inline-block;
+  background: url("http://a.tbcdn.cn/apps/tmall/mui/msg/img/msg.png") no-repeat;
+  background-position: -64px -29px;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+.icon-error {
+  background-position: -1px -32px;
+  width: 32px;
+  height: 32px;
+}
+.icon-question {
+  background-position: 0 -226px;
+  width: 32px;
+  height: 32px;
+}
+.icon-light {
+  background-position: -5px -126px;
+  width: 24px;
+  height: 32px;
+}
+.icon-success {
+  background-position: -1px -78px;
+  width: 32px;
+  height: 32px;
+}
+.icon-info {
+  background-position: -1px -177px;
+  width: 32px;
+  height: 32px;
+}
+.icon-forbidden {
+  background-position: -1px -375px;
+  width: 32px;
+  height: 32px;
+}
+.icon-sound {
+  background-position: -1px -330px;
+  width: 28px;
+  height: 24px;
+}
+.icon-bell {
+  background-position: -1px -277px;
+  width: 32px;
+  height: 32px;
+}
+.icon-error-s {
+  background-position: -64px -29px;
+}
+.icon-question-s {
+  background-position: -64px -129px;
+}
+.icon-success-s {
+  background-position: -64px -54px;
+}
+.icon-light-s {
+  background-position: -64px -106px;
+}
+.icon-info-s {
+  background-position: -64px -82px;
+}
+.icon-forbidden-s {
+  background-position: -64px -4px;
+}
+.icon-sound-s {
+  background-position: -64px -181px;
+  height: 13px;
+}
+.icon-bell-s {
+  background-position: -64px -156px;
+}
+/*tmall & taobao icon*/
+.icon-tmall,
+.icon-taobao {
+  background: url("http://www.taobao.com/favicon.ico") no-repeat;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+.icon-tmall {
+  background: url("http://www.tmall.com/favicon.ico") no-repeat;
+}
+.tip-min {
+  padding: 2px 10px 2px 5px;
+  border: 1px solid #37bd10;
+  background-color: #effee5;
+  display: inline-block;
+}
+.tip-min.error {
+  color: #666;
+  background-color: #fff1f1;
+  border-color: #c5302b;
+}
+.tip-min.error .icon-error-s {
+  display: inline-block;
+}
+.tip-min.warning {
+  background-color: #ffffe4;
+  border-color: #fbcc80;
+}
+.tip-min.warning .icon-light-s {
+  display: inline-block;
+}
+.tip-min .icon-error-s,
+.tip-min .icon-success-s,
+.tip-min .icon-light-s {
+  display: none;
+  vertical-align: -3px;
+}
+.tip-min .icon-success-s {
+  display: inline-block;
+}
+.tip-min span {
+  vertical-align: 0;
+}
+.tip-large {
+  border: 1px solid #37bd10;
+  padding: 15px;
+  background: #effee5;
+  font-size: 14px;
+}
+.tip-large p {
+  margin: 10px 0 0 0;
+}
+.tip-large a {
+  font-size: 14px;
+  margin-right: 10px;
+}
+.tip-large.success .icon-success-l {
+  display: inline-block;
+}
+.tip-large.warning {
+  border-color: #fbcc80;
+  background: #ffffe4;
+}
+.tip-large.warning .icon-light {
+  display: inline-block;
+}
+.tip-large.error {
+  border-color: #ff807e;
+  background: #fff3f3;
+}
+.tip-large.error .icon-error {
+  display: inline-block;
+}
+.tip-large .icon-light,
+.tip-large .icon-success,
+.tip-large .icon-error {
+  float: left;
+  display: none;
+}
+.tip-large .tip-inner {
+  margin-left: 45px;
+  min-height: 30px;
+}
+.tip-large h3 {
+  margin: 0 0 10px 0;
+}

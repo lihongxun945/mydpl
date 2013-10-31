@@ -1,7 +1,7 @@
 module.exports = (grunt) ->
     grunt.initConfig
         pkg: grunt.file.readJSON 'package.json'
-        assets: 'assets'
+        assets: 'src'
         js_root: '<%= assets %>/js'
         coffee_root: '<%= assets %>/coffee'
         css_root: '<%= assets %>/css'
@@ -42,7 +42,7 @@ module.exports = (grunt) ->
             all: ['<%= js_root %>/tests/**/*.html']
         watch:
             options:
-                livereload: true
+                livereload: 8848
             css:
                 files: ['<%= less_root %>/**/*.less']
                 tasks: ['less:development']
