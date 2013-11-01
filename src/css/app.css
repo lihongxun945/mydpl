@@ -166,6 +166,21 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  color: #36C;
+}
+a:hover {
+  color: #f60;
+  text-decoration: underline;
+}
 .icon-error-s,
 .icon-error,
 .icon-success-s,
@@ -318,7 +333,7 @@ table {
   font-size: 14px;
   margin-right: 10px;
 }
-.tip-large.success .icon-success-l {
+.tip-large.success .icon-success {
   display: inline-block;
 }
 .tip-large.warning .icon-light {
@@ -472,4 +487,91 @@ table {
 }
 .btn-warning-sf {
   background-position-y: -450px;
+}
+.table {
+  width: 100%;
+}
+.table th,
+.table td {
+  text-align: center;
+  line-height: 22px;
+  padding: 4px 0;
+}
+.table th {
+  border-bottom: 1px solid #aec7e5;
+  background: url(http://a.tbcdn.cn/app/trade/img/itemlist_bg.gif) repeat-x 0 2px;
+  border-top: 1px solid #b3d1ff;
+}
+.table td {
+  border-bottom: 1px solid #c9c9c9;
+}
+.table.table-striped tr:nth-child(even) > td {
+  background-color: #f4f4f4;
+}
+.table.table-bordered th {
+  border: 1px solid #aec7e5;
+}
+.table.table-bordered td {
+  border: 1px solid #c9c9c9;
+}
+.tab-min,
+.tab {
+  margin-top: 16px;
+  padding-left: 10px;
+  height: 32px;
+  border-bottom: 1px solid #B1D1FF;
+  font-size: 15px;
+}
+.tab-min > li,
+.tab > li {
+  float: left;
+  padding: 4px;
+  outline: 0;
+  position: relative;
+}
+.tab-min > li a,
+.tab > li a {
+  height: 17px;
+  line-height: 17px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 10px;
+  background: #e5f0ff;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border: 1px solid #b1d1ff;
+  -webkit-box-shadow: 0 1px 2px #ffffff inset;
+  box-shadow: 0 1px 2px #ffffff inset;
+}
+.tab-min > li.active,
+.tab > li.active {
+  padding-top: 0;
+}
+.tab-min > li.active a,
+.tab > li.active a {
+  height: 21px;
+  line-height: 21px;
+  border-bottom-color: #fff;
+  background: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: default;
+  color: #666;
+}
+.tab-min {
+  height: 25px;
+  font-size: 12px;
+}
+.tab-min > li {
+  padding: 3px;
+}
+.tab-min > li a {
+  height: 15px;
+  line-height: 15px;
+  padding: 3px 10px;
+}
+.tab-min > li.active a {
+  height: 18px;
+  line-height: 18px;
+  font-size: 13px;
 }

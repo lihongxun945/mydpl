@@ -1,0 +1,31 @@
+.table {
+    width: 100%;
+    th, td {
+       text-align: center;
+       line-height: 22px;
+       padding: 4px 0;
+    }
+    th {
+       border-bottom: 1px solid #aec7e5;
+       background: url(http://a.tbcdn.cn/app/trade/img/itemlist_bg.gif) repeat-x 0 2px;
+       border-top: 1px solid #b3d1ff;
+    }
+
+    td {
+        border-bottom: 1px solid #c9c9c9;
+    }
+
+    &.table-striped {
+        tr:nth-child(even) > td {
+            background-color: #f4f4f4;
+        }
+    }
+    &.table-bordered {
+        th {
+            border: 1px solid #aec7e5;
+        }
+        td {
+            border: 1px solid #c9c9c9;
+        }
+    }
+}
