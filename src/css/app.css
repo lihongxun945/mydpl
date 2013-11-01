@@ -340,3 +340,136 @@ table {
 .tip-large h3 {
   margin: 0 0 10px 0;
 }
+.btn-l,
+.btn-primary-l,
+.btn-warning-l,
+.btn-m,
+.btn-primary-m,
+.btn-warning-m,
+.btn-s,
+.btn-primary-s,
+.btn-warning-s,
+.btn-sl,
+.btn-primary-sl,
+.btn-warning-sl,
+.btn-sf,
+.btn-primary-sf,
+.btn-warning-sf {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0;
+  border: none;
+  background: url("http://a.tbcdn.cn/sys/common/img/btn_bg.png") no-repeat;
+  cursor: pointer;
+  background-position-x: -1px;
+}
+.btn-l:hover,
+.btn-primary-l:hover,
+.btn-warning-l:hover,
+.btn-m:hover,
+.btn-primary-m:hover,
+.btn-warning-m:hover,
+.btn-s:hover,
+.btn-primary-s:hover,
+.btn-warning-s:hover,
+.btn-sl:hover,
+.btn-primary-sl:hover,
+.btn-warning-sl:hover,
+.btn-sf:hover,
+.btn-primary-sf:hover,
+.btn-warning-sf:hover {
+  text-decoration: none;
+}
+.btn-l,
+.btn-primary-l,
+.btn-warning-l {
+  height: 25px;
+  line-height: 25px;
+  width: 98px;
+  font-size: 15px;
+}
+.btn-l {
+  color: #333;
+  background-position-y: -350px;
+}
+.btn-primary-l {
+  background-position-y: -325px;
+}
+.btn-warning-l {
+  background-position-y: -300px;
+}
+.btn-m,
+.btn-primary-m,
+.btn-warning-m {
+  height: 25px;
+  line-height: 25px;
+  width: 79px;
+  font-size: 15px;
+}
+.btn-m {
+  color: #333;
+  background-position-y: -50px;
+}
+.btn-primary-m {
+  background-position-y: -25px;
+}
+.btn-warning-m {
+  background-position-y: 0;
+}
+.btn-s,
+.btn-primary-s,
+.btn-warning-s {
+  height: 20px;
+  line-height: 20px;
+  width: 50px;
+  font-size: 12px;
+}
+.btn-s {
+  color: #333;
+  background-position-y: -211px;
+}
+.btn-primary-s {
+  background-position-y: -181px;
+}
+.btn-warning-s {
+  background-position-y: -151px;
+}
+.btn-sl,
+.btn-primary-sl,
+.btn-warning-sl {
+  height: 20px;
+  line-height: 20px;
+  width: 60px;
+  font-size: 12px;
+}
+.btn-sl {
+  color: #333;
+  background-position-y: -661px;
+}
+.btn-primary-sl {
+  background-position-y: -631px;
+}
+.btn-warning-sl {
+  background-position-y: -601px;
+}
+.btn-sf,
+.btn-primary-sf,
+.btn-warning-sf {
+  height: 25px;
+  line-height: 25px;
+  width: 58px;
+  font-size: 12px;
+}
+.btn-sf {
+  color: #333;
+  background-position-y: -500px;
+}
+.btn-primary-sf {
+  background-position-y: -475px;
+}
+.btn-warning-sf {
+  background-position-y: -450px;
+}
