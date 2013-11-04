@@ -14,7 +14,7 @@ module.exports = (grunt) ->
                 options:
                     compress: true
                 src: '<%= less_root%>/entry.less'
-                dest: '<%= css_root%>/app.css'
+                dest: '<%= css_root%>/app.min.css'
         coffee:
             compile:
                 expand: true
