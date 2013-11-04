@@ -1,11 +1,10 @@
 .tab-min,
 .tab
 {
-    margin-top: 16px;
+    margin: @comMargin 0;
     padding-left: 10px;
     height: 32px;
     border-bottom: 1px solid #B1D1FF;
-    font-size: 15px;
 
     & > li {
         float: left;
@@ -34,7 +33,7 @@
                 line-height: 21px;
                 border-bottom-color: #fff;
                 background: #fff;
-                font-size: 16px;
+                font-size: @fontSizeLarge;
                 font-weight: bold;
                 cursor: default;
                 color: #666;
@@ -45,7 +44,8 @@
 
 .tab-min {
     height: 25px;
-    font-size: 12px;
+    font-size: @fontSizeSmall;
+    margin: @comMarginMin 0;
     &>li {
         padding: 3px;
         a {

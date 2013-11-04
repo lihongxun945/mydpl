@@ -1,6 +1,16 @@
-* {
+body {
+    font-family: @fontFamily;
+    font-size: @fontSize;
+}
+ul,
+ol
+{
     margin: 0;
     padding: 0;
+}
+
+p {
+    margin: @comMargin 0;
 }
 
 ul, li {
@@ -8,10 +18,10 @@ ul, li {
 }
 
 a {
-    color: #36C;
+    color: @linkColor;
 
     &:hover {
-        color: #f60;
+        color: @linkColorHover;
         text-decoration: underline;
     }
 }

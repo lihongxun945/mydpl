@@ -1,24 +1,27 @@
 .tip-min,
 .tip-large
 {
-    border: 1px solid @color-border-success;
-    background-color: @color-bg-success;
+    background-color: @tipSuccessBg;
+    border: 1px solid @tipSuccessBorder;
     &.error {
-        color: #666;
-        background-color: @color-bg-error;
-        border-color: @color-border-error;
+        background-color: @tipErrorBg;
+        border-color: @tipErrorBorder;
     }
         
     &.warning {
-        background-color: @color-bg-warning;
-        border-color: @color-border-warning;
+        background-color: @tipWarningBg;
+        border-color: @tipWarningBorder;
+    }
+    &.info {
+        background-color: @tipInfoBg;
+        border-color: @tipInfoBorder;
     }
 }
 .tip-min {
     padding: 2px 10px 2px 5px;
     display: inline-block;
+    vertical-align: middle;
     &.error {
-        color: #666;
         .icon-error-s {
             display: inline-block;
         }
@@ -29,7 +32,12 @@
             display: inline-block;
         }
     }
-    .icon-error-s, .icon-success-s, .icon-light-s {
+    &.info {
+        .icon-info-s {
+            display: inline-block;
+        }
+    }
+    &>i {
         display: none;
         vertical-align: -3px;;
     }
@@ -44,12 +52,11 @@
 
 .tip-large {
     padding: 15px;
-    font-size: 14px;
+    margin: @comMargin 0;
     p {
         margin: 10px 0 0 0;
     }
     a {
-        font-size: 14px;
         margin-right: 10px;
     }
     &.success {
@@ -67,10 +74,12 @@
             display: inline-block;
         }
     }
-    .icon-light,
-    .icon-success,
-    .icon-error
-    {
+    &.info {
+        .icon-info {
+            display: inline-block;
+        }
+    }
+    &>i {
         float: left;
         display: none;
     }

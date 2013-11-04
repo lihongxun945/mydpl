@@ -1,8 +1,109 @@
-/*colors*/
-@color-bg-success: #effee5;
-@color-bg-error: #fff1f1;
-@color-bg-warning: #ffffe4;
+// Grays
+// -------------------------
+@black:                 #000;
+@grayDarker:            #222;
+@grayDark:              #333;
+@gray:                  #555;
+@grayLight:             #999;
+@grayLighter:           #eee;
+@white:                 #fff;
 
-@color-border-success: #37bd10;
-@color-border-error: #c5302b;
-@color-border-warning: #fbcc80;
+
+// Accent colors
+// -------------------------
+@blue:                  #049cdb;
+@blueDark:              #0064cd;
+@green:                 #46a546;
+@red:                   #9d261d;
+@yellow:                #ffc40d;
+@orange:                #f89406;
+@pink:                  #c3325f;
+@purple:                #7a43b6;
+
+
+
+// links
+@linkColor:             #36c;
+@linkColorHover:        #f60;
+
+/*font*/
+@fontFamily:        "Helvetica Neue", Helvetica, Arial, sansSerif;
+@fontSizeLarger: 20px;
+@fontSizeLarge: 16px;
+@fontSize: 14px;
+@fontSizeSmall: 12px;
+@fontSizeMini: 12px;
+@textColor:             @grayDark;
+
+/* padding border margin */
+@borderRadius:      4px;
+@borderRadiusLarge:     6px;
+@borderRadiusSmall:     3px;
+
+@paddingLarge:          11px 19px; // 44px
+@paddingSmall:          2px 10px;  // 26px
+@paddingMini:           0 6px;   // 22px
+
+@comMargin: 20px;
+@comMarginMin: 12px;
+
+/* form */
+@inputHeight: 30px;
+@lineHeight: 20px;
+
+// Form states and alerts
+// -------------------------
+@warningText:             #c09853;
+@warningBackground:       #fcf8e3;
+@warningBorder:           darken(spin(@warningBackground, -10), 3%);
+
+@errorText:               #b94a48;
+@errorBackground:         #f2dede;
+@errorBorder:             darken(spin(@errorBackground, -10), 3%);
+
+@successText:             #468847;
+@successBackground:       #dff0d8;
+@successBorder:           darken(spin(@successBackground, -10), 5%);
+
+@infoText:                #3a87ad;
+@infoBackground:          #d9edf7;
+@infoBorder:              darken(spin(@infoBackground, -10), 7%);
+
+
+
+
+/*tip*/
+@tipSuccessBg: #effee5;
+@tipErrorBg: #fff1f1;
+@tipWarningBg: #ffffe4;
+@tipInfoBg: #f4f8fa;
+
+@tipSuccessBorder: #37bd10;
+@tipErrorBorder: #c5302b;
+@tipWarningBorder: #fbcc80;
+@tipInfoBorder: #3a87ad;
+
+
+// Buttons
+// -------------------------
+@btnBackground:                     @white;
+@btnBackgroundHighlight:            darken(@white, 10%);
+@btnBorder:                         #ccc;
+
+@btnPrimaryBackground:              @linkColor;
+@btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 20%);
+
+@btnInfoBackground:                 #5bc0de;
+@btnInfoBackgroundHighlight:        #2f96b4;
+
+@btnSuccessBackground:              #62c462;
+@btnSuccessBackgroundHighlight:     #51a351;
+
+@btnWarningBackground:              lighten(@orange, 15%);
+@btnWarningBackgroundHighlight:     @orange;
+
+@btnDangerBackground:               #ee5f5b;
+@btnDangerBackgroundHighlight:      #bd362f;
+
+@btnInverseBackground:              #444;
+@btnInverseBackgroundHighlight:     @grayDarker;
