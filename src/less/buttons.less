@@ -7,11 +7,11 @@
 // --------------------------------------------------
 
 // Core
-.btn {
+.sui-btn {
   display: inline-block;
   .ie7-inline-block();
   padding: 4px 12px;
-  margin-bottom: 0; // For input.btn
+  margin-bottom: 0; // For input.sui-btn
   font-size: @fontSize;
   line-height: @lineHeight;
   text-align: center;
@@ -68,33 +68,33 @@
 // --------------------------------------------------
 
 // Large
-.btn-large {
+.sui-btn-large {
   padding: @paddingLarge;
   font-size: @fontSizeLarge;
   .border-radius(@borderRadiusLarge);
 }
-.btn-large [class^="icon-"],
-.btn-large [class*=" icon-"] {
+.sui-btn-large [class^="icon-"],
+.sui-btn-large [class*=" icon-"] {
   margin-top: 4px;
 }
 
 // Small
-.btn-small {
+.sui-btn-small {
   padding: @paddingSmall;
   font-size: @fontSizeSmall;
   .border-radius(@borderRadiusSmall);
 }
-.btn-small [class^="icon-"],
-.btn-small [class*=" icon-"] {
+.sui-btn-small [class^="icon-"],
+.sui-btn-small [class*=" icon-"] {
   margin-top: 0;
 }
-.btn-mini [class^="icon-"],
-.btn-mini [class*=" icon-"] {
+.sui-btn-mini [class^="icon-"],
+.sui-btn-mini [class*=" icon-"] {
   margin-top: -1px;
 }
 
 // Mini
-.btn-mini {
+.sui-btn-mini {
   padding: @paddingMini;
   font-size: @fontSizeMini;
   .border-radius(@borderRadiusSmall);
@@ -104,7 +104,7 @@
 // Block button
 // -------------------------
 
-.btn-block {
+.sui-btn-block {
   display: block;
   width: 100%;
   padding-left: 0;
@@ -113,7 +113,7 @@
 }
 
 // Vertically space out multiple block buttons
-.btn-block + .btn-block {
+.sui-btn-block + .sui-btn-block {
   margin-top: 5px;
 }
 
@@ -121,7 +121,7 @@
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-  &.btn-block {
+  &.sui-btn-block {
     width: 100%;
   }
 }
@@ -132,38 +132,38 @@ input[type="button"] {
 // --------------------------------------------------
 
 // Provide *some* extra contrast for those who can get it
-.btn-primary.active,
-.btn-warning.active,
-.btn-danger.active,
-.btn-success.active,
-.btn-info.active,
-.btn-inverse.active {
+.sui-btn-primary.active,
+.sui-btn-warning.active,
+.sui-btn-danger.active,
+.sui-btn-success.active,
+.sui-btn-info.active,
+.sui-btn-inverse.active {
   color: rgba(255,255,255,.75);
 }
 
 // Set the backgrounds
 // -------------------------
-.btn-primary {
+.sui-btn-primary {
   .buttonBackground(@btnPrimaryBackground, @btnPrimaryBackgroundHighlight);
 }
 // Warning appears are orange
-.btn-warning {
+.sui-btn-warning {
   .buttonBackground(@btnWarningBackground, @btnWarningBackgroundHighlight);
 }
 // Danger and error appear as red
-.btn-danger {
+.sui-btn-danger {
   .buttonBackground(@btnDangerBackground, @btnDangerBackgroundHighlight);
 }
 // Success appears as green
-.btn-success {
+.sui-btn-success {
   .buttonBackground(@btnSuccessBackground, @btnSuccessBackgroundHighlight);
 }
 // Info appears as a neutral blue
-.btn-info {
+.sui-btn-info {
   .buttonBackground(@btnInfoBackground, @btnInfoBackgroundHighlight);
 }
 // Inverse appears as dark gray
-.btn-inverse {
+.sui-btn-inverse {
   .buttonBackground(@btnInverseBackground, @btnInverseBackgroundHighlight);
 }
 
@@ -171,8 +171,8 @@ input[type="button"] {
 // Cross-browser Jank
 // --------------------------------------------------
 
-button.btn,
-input[type="submit"].btn {
+button.sui-btn,
+input[type="submit"].sui-btn {
 
   // Firefox 3.6 only I believe
   &::-moz-focus-inner {
@@ -184,15 +184,15 @@ input[type="submit"].btn {
   *padding-top: 3px;
   *padding-bottom: 3px;
 
-  &.btn-large {
+  &.sui-btn-large {
     *padding-top: 7px;
     *padding-bottom: 7px;
   }
-  &.btn-small {
+  &.sui-btn-small {
     *padding-top: 3px;
     *padding-bottom: 3px;
   }
-  &.btn-mini {
+  &.sui-btn-mini {
     *padding-top: 1px;
     *padding-bottom: 1px;
   }
