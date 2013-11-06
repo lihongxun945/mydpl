@@ -17,6 +17,7 @@ pages.forEach(function (name) {
 
   var page = fs.readFileSync(__dirname  + '/../templates/pages/' + name, 'utf-8')
     , context = {}
+  context.title = name.replace(/\.mustache$/, '')
 
   page = hogan.compile(page)
   page = layout.render(context, {
