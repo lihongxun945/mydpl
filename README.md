@@ -1,11 +1,14 @@
-# What's this?
-这是一个空的web项目，目的是给前端开发一个搭建一个完整的初始开发环境，这个项目包括以下几个内容：
+# 这是什么
+SUI
+
+# 用到了这些
 
 * Grunt, 用于编译压缩代码
 * requirejs, jquery, backbone, 可以自行增删
 * coffeescript, 建议使用coffee来写js，当然不是强制的
 * less, 还默认引入了bootstrap中的三个文件normalize.less, variable.less, mixin.less，可以根据自己的喜好修改
 * qunit, 用于做单元测试
+* hogan, 文档模板，用来编译mustache
 
 # 如何安装
 直接在根目录下执行 `npm install` 即可。
@@ -16,8 +19,7 @@
 - project 根目录
 - Gruntfile.coffee Grunt配置文件
 - package.json npm配置文件
-- demo.html 一个简单的demo
-- assets/ 静态文件放在这里
+- src/ 静态文件放在这里
     - coffee/，coffeesciprt代码，会全部编译到js目录下的对应文件
         - requirejs-config.coffee， requirejs配置文件
         - entry.coffee，入口，根据这个文件编译生成app.js和app.min.js
@@ -33,6 +35,11 @@
         - app.min.js，合并压缩的js文件，发布使用
         - tests/，单元测试
             - demo.html，单元测试例子，可以参考此文件来写单元测试，详细的可以参见 [QUnit](www.qunitjs.com)
+- docs/ 文档放在这里
+    - build/ 编译模板的脚本放这里
+    - templates/ 模板
+        - layout.mustache
+        - pages/ 每个页面都放在这里
 
 **注意，其中的demo可以自行删除**
 
