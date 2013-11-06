@@ -1,7 +1,10 @@
+exec = require("child_process").exec
+
 module.exports = (grunt) ->
     grunt.initConfig
         pkg: grunt.file.readJSON 'package.json'
         assets: 'src'
+        docs: 'docs'
         js_root: '<%= assets %>/js'
         coffee_root: '<%= assets %>/coffee'
         css_root: '<%= assets %>/css'
@@ -53,7 +56,10 @@ module.exports = (grunt) ->
                 files: ['<%= less_root %>/**/*.less']
                 tasks: ['less:development']
             html:
-                files: ['**/*.html']
+                files: ['docs/**/*.html']
+            hogan:
+                files: ['docs/templates/**/*.mustache']
+                tasks: ['hogan']
             js:
                 files: ['<%= coffee_root%>/**/*.coffee']
                 tasks: ['coffee']
@@ -64,6 +70,9 @@ module.exports = (grunt) ->
     grunt.loadNpmTasks 'grunt-contrib-coffee'
     grunt.loadNpmTasks 'grunt-contrib-requirejs'
     grunt.loadNpmTasks 'grunt-contrib-qunit'
+
+    grunt.registerTask 'hogan', 'compile mustache template', ->
+        exec 'node docs/build'
 
     grunt.registerTask 'default', ['less:development', 'coffee', 'qunit', 'requirejs:development']
     grunt.registerTask 'production', ['less:production', 'coffee', 'qunit', 'requirejs:production']
