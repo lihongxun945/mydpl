@@ -55,15 +55,15 @@ module.exports = (grunt) ->
             css:
                 files: ['<%= less_root %>/**/*.less']
                 tasks: ['less:development']
-            html:
-                files: ['docs/**/*.html']
-            hogan:
+            docs:
                 files: ['docs/templates/**/*.mustache']
                 tasks: ['hogan']
             js:
                 files: ['<%= coffee_root%>/**/*.coffee']
                 tasks: ['coffee']
                 #tasks: ['coffee', 'requirejs:development']
+            html:
+                files: ['docs/**/*.html']
 
     grunt.loadNpmTasks 'grunt-contrib-watch'
     grunt.loadNpmTasks 'grunt-contrib-less'
