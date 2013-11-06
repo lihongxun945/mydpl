@@ -38,7 +38,6 @@ input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit
 button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
 textarea{overflow:auto;vertical-align:top}
 table{border-collapse:collapse;border-spacing:0}
-body{font-family:"Helvetica Neue",Helvetica,Arial,sansSerif;font-size:14px}
 ul,ol{margin:0;padding:0}
 p{margin:20px 0}
 ul,li{list-style:none}
@@ -65,11 +64,11 @@ a{color:#36c}a:hover{color:#f60;text-decoration:underline}
 .sui-tip-min,.sui-tip-large{background-color:#effee5;border:1px solid #37bd10}.sui-tip-min.error,.sui-tip-large.error{background-color:#fff1f1;border-color:#c5302b}
 .sui-tip-min.warning,.sui-tip-large.warning{background-color:#ffffe4;border-color:#fbcc80}
 .sui-tip-min.info,.sui-tip-large.info{background-color:#f4f8fa;border-color:#3a87ad}
-.sui-tip-min{padding:2px 10px 2px 5px;display:inline-block;vertical-align:middle}.sui-tip-min.error .sui-icon-error-s{display:inline-block}
+.sui-tip-min{padding:2px 10px 2px 5px;display:inline-block;vertical-align:middle;height:16px;line-height:16px}.sui-tip-min.error .sui-icon-error-s{display:inline-block}
 .sui-tip-min.warning .sui-icon-light-s{display:inline-block}
 .sui-tip-min.info .sui-icon-info-s{display:inline-block}
 .sui-tip-min>i{display:none;vertical-align:-3px}
-.sui-tip-min .sui-icon-success-s{display:inline-block}
+.sui-tip-min.success .sui-icon-success-s{display:inline-block}
 .sui-tip-min span{vertical-align:0}
 .sui-tip-large{padding:15px;margin:20px 0}.sui-tip-large p{margin:10px 0 0 0}
 .sui-tip-large a{margin-right:10px}

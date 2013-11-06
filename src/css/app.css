@@ -191,10 +191,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sansSerif;
-  font-size: 14px;
-}
 ul,
 ol {
   margin: 0;
@@ -338,6 +334,8 @@ a:hover {
   padding: 2px 10px 2px 5px;
   display: inline-block;
   vertical-align: middle;
+  height: 16px;
+  line-height: 16px;
 }
 .sui-tip-min.error .sui-icon-error-s {
   display: inline-block;
@@ -352,7 +350,7 @@ a:hover {
   display: none;
   vertical-align: -3px;
 }
-.sui-tip-min .sui-icon-success-s {
+.sui-tip-min.success .sui-icon-success-s {
   display: inline-block;
 }
 .sui-tip-min span {
