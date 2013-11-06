@@ -11,7 +11,8 @@ SUI
 * hogan, 文档模板，用来编译mustache
 
 # 如何安装
-直接在根目录下执行 `npm install` 即可。
+根目录下执行 `npm install` 。
+在docs/build下执行 `npm install`。
 **前提是必须安装了nodejs**
 
 # 文件结构说明
@@ -50,3 +51,4 @@ Grunt 已经配置了如下几个任务
 - *default*, 编译合并js和css，执行qunit，但是不压缩代码，开发调试使用
 - *production*，功能同default, 不同的是会压缩代码，发布使用
 - *test*, qunit的别名，js代码必须通过qunit测试
+- *hogan*, 编译docs模板
