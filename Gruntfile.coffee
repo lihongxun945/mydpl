@@ -72,7 +72,8 @@ module.exports = (grunt) ->
     grunt.loadNpmTasks 'grunt-contrib-qunit'
 
     grunt.registerTask 'hogan', 'compile mustache template', ->
-        exec 'node docs/build'
+        done = this.async()
+        child = exec 'node docs/build', (e)-> done()
 
     grunt.registerTask 'default', ['less:development', 'coffee', 'qunit', 'requirejs:development']
     grunt.registerTask 'production', ['less:production', 'coffee', 'qunit', 'requirejs:production']

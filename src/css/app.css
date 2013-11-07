@@ -1,6 +1,5 @@
 /*font*/
 /* padding border margin */
-/*tip*/
 .clearfix {
   *zoom: 1;
 }
@@ -307,44 +306,44 @@ a:hover {
   background: url("http://www.tmall.com/favicon.ico") no-repeat;
 }
 .sui-tip-success {
-  background-color: #effee5;
-  border-color: #37bd10;
+  background-color: #dff0d8;
+  border-color: #94c569;
 }
 .sui-tip-error {
-  background-color: #fff1f1;
-  border-color: #c5302b;
+  background-color: #f2dede;
+  border-color: #c7707f;
 }
 .sui-tip-warning {
-  background-color: #ffffe4;
-  border-color: #fbcc80;
+  background-color: #fcf8e3;
+  border-color: #edbd59;
 }
 .sui-tip-info {
-  background-color: #f4f8fa;
-  border-color: #3a87ad;
+  background-color: #d9edf7;
+  border-color: #5bc7dc;
 }
 .sui-tip-min,
 .sui-tip-large {
-  border: 1px solid #37bd10;
+  border: 1px solid #94c569;
 }
 .sui-tip-min.success,
 .sui-tip-large.success {
-  background-color: #effee5;
-  border-color: #37bd10;
+  background-color: #dff0d8;
+  border-color: #94c569;
 }
 .sui-tip-min.error,
 .sui-tip-large.error {
-  background-color: #fff1f1;
-  border-color: #c5302b;
+  background-color: #f2dede;
+  border-color: #c7707f;
 }
 .sui-tip-min.warning,
 .sui-tip-large.warning {
-  background-color: #ffffe4;
-  border-color: #fbcc80;
+  background-color: #fcf8e3;
+  border-color: #edbd59;
 }
 .sui-tip-min.info,
 .sui-tip-large.info {
-  background-color: #f4f8fa;
-  border-color: #3a87ad;
+  background-color: #d9edf7;
+  border-color: #5bc7dc;
 }
 .sui-tip-min {
   padding: 2px 10px 2px 5px;
@@ -1541,6 +1540,19 @@ a.sui-badge:focus {
   background: url(http://img03.taobaocdn.com/tps/i3/T1cJ4PXfXGXXXXXXXX-16-13.gif) no-repeat 106px 5px;
 }
 .sui-input-control.success .sui-tip-min {
-  background-color: #effee5;
-  border-color: #37bd10;
+  background-color: #dff0d8;
+  border-color: #94c569;
+}
+/*text color */
+.sui-text-success {
+  color: #468847;
+}
+.sui-text-error {
+  color: #b94a48;
+}
+.sui-text-warning {
+  color: #c09853;
+}
+.sui-text-info {
+  color: #3a87ad;
 }

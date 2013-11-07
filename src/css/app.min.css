@@ -60,14 +60,14 @@ a{color:#36c}a:hover{color:#f60;text-decoration:underline}
 .sui-icon-bell-s{background-position:-64px -156px}
 .sui-icon-tmall,.sui-icon-taobao{background:url("http://www.taobao.com/favicon.ico") no-repeat;display:inline-block;width:16px;height:16px;vertical-align:middle}
 .sui-icon-tmall{background:url("http://www.tmall.com/favicon.ico") no-repeat}
-.sui-tip-success{background-color:#effee5;border-color:#37bd10}
-.sui-tip-error{background-color:#fff1f1;border-color:#c5302b}
-.sui-tip-warning{background-color:#ffffe4;border-color:#fbcc80}
-.sui-tip-info{background-color:#f4f8fa;border-color:#3a87ad}
-.sui-tip-min,.sui-tip-large{border:1px solid #37bd10}.sui-tip-min.success,.sui-tip-large.success{background-color:#effee5;border-color:#37bd10}
-.sui-tip-min.error,.sui-tip-large.error{background-color:#fff1f1;border-color:#c5302b}
-.sui-tip-min.warning,.sui-tip-large.warning{background-color:#ffffe4;border-color:#fbcc80}
-.sui-tip-min.info,.sui-tip-large.info{background-color:#f4f8fa;border-color:#3a87ad}
+.sui-tip-success{background-color:#dff0d8;border-color:#94c569}
+.sui-tip-error{background-color:#f2dede;border-color:#c7707f}
+.sui-tip-warning{background-color:#fcf8e3;border-color:#edbd59}
+.sui-tip-info{background-color:#d9edf7;border-color:#5bc7dc}
+.sui-tip-min,.sui-tip-large{border:1px solid #94c569}.sui-tip-min.success,.sui-tip-large.success{background-color:#dff0d8;border-color:#94c569}
+.sui-tip-min.error,.sui-tip-large.error{background-color:#f2dede;border-color:#c7707f}
+.sui-tip-min.warning,.sui-tip-large.warning{background-color:#fcf8e3;border-color:#edbd59}
+.sui-tip-min.info,.sui-tip-large.info{background-color:#d9edf7;border-color:#5bc7dc}
 .sui-tip-min{padding:2px 10px 2px 5px;display:inline-block;vertical-align:middle;height:16px;line-height:16px}.sui-tip-min>.sui-icon{display:none}
 .sui-tip-min.error>.sui-icon{display:inline-block;background:url("http://a.tbcdn.cn/apps/tmall/mui/msg/img/msg.png") no-repeat;vertical-align:middle;width:16px;height:16px;background-position:-64px -29px;vertical-align:-3px;}
 .sui-tip-min.warning>.sui-icon{display:inline-block;background:url("http://a.tbcdn.cn/apps/tmall/mui/msg/img/msg.png") no-repeat;vertical-align:middle;width:16px;height:16px;background-position:-64px -29px;background-position:-64px -106px;vertical-align:-3px;}
@@ -188,4 +188,8 @@ a.sui-label:hover,a.sui-label:focus,a.sui-badge:hover,a.sui-badge:focus{color:#f
 .sui-input-control.success input.warning{color:#c09853;border:1px solid #c09853;background-color:#fff}.sui-input-control.success input.warning:focus{-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 6px #dbc59e;-moz-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 6px #dbc59e;box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 6px #dbc59e}
 .sui-input-control.success input.info{color:#3a87ad;border:1px solid #3a87ad;background-color:#fff}.sui-input-control.success input.info:focus{-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 6px #7ab5d3;-moz-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 6px #7ab5d3;box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 6px #7ab5d3}
 .sui-input-control.success input.sui-input-date{background:url(http://img03.taobaocdn.com/tps/i3/T1cJ4PXfXGXXXXXXXX-16-13.gif) no-repeat 106px 5px}
-.sui-input-control.success .sui-tip-min{background-color:#effee5;border-color:#37bd10}
+.sui-input-control.success .sui-tip-min{background-color:#dff0d8;border-color:#94c569}
+.sui-text-success{color:#468847}
+.sui-text-error{color:#b94a48}
+.sui-text-warning{color:#c09853}
+.sui-text-info{color:#3a87ad}
