@@ -50,3 +50,7 @@ Grunt 已经配置了如下几个任务
 - *production*，功能同default, 不同的是会压缩代码，发布使用
 - *test*, qunit的别名，js代码必须通过qunit测试
 - *hogan*, 编译docs模板
+
+
+# TODO
+- 使用glue自动拼sprite
