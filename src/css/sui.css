@@ -1556,3 +1556,13 @@ a.sui-badge:focus {
   background-color: #dff0d8;
   border-color: #94c569;
 }
+.sui-placeholder-wrap {
+  position: relative;
+}
+.sui-placeholder-wrap .sui-placeholder {
+  position: absolute;
+  color: #999999;
+  left: 6px;
+  top: 0;
+  pointer-events: none;
+}

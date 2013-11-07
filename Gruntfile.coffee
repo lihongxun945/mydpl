@@ -11,12 +11,12 @@ module.exports = (grunt) ->
         less_root: '<%= assets %>/less'
         less:
             development:
-                src: '<%= less_root %>/sui.less'
+                src: '<%= less_root %>/entry.less'
                 dest: '<%= css_root %>/sui.css'
             production:
                 options:
                     compress: true
-                src: '<%= less_root%>/sui.less'
+                src: '<%= less_root%>/entry.less'
                 dest: '<%= css_root%>/sui.min.css'
         coffee:
             compile:
@@ -32,8 +32,8 @@ module.exports = (grunt) ->
                     baseUrl: "<%= js_root %>"
                     name: "almond"
                     optimize: "none"
-                    include: 'sui'
-                    insertRequire: ['sui']
+                    include: 'entry'
+                    insertRequire: ['entry']
                     mainConfigFile: "<%= js_root%>/requirejs-config.js"
                     out: "<%= js_root %>/sui.js"
                     wrap: true
@@ -41,8 +41,8 @@ module.exports = (grunt) ->
                 options:
                     baseUrl: "<%= js_root %>"
                     name: "almond"
-                    include: 'sui'
-                    insertRequire: ['sui']
+                    include: 'entry'
+                    insertRequire: ['entry']
                     optimize: "uglify2"
                     mainConfigFile: "<%= js_root %>/requirejs-config.js"
                     out: "<%= js_root %>/sui.min.js"
@@ -60,8 +60,8 @@ module.exports = (grunt) ->
                 tasks: ['hogan']
             js:
                 files: ['<%= coffee_root%>/**/*.coffee']
-                tasks: ['coffee']
-                #tasks: ['coffee', 'requirejs:development']
+                #tasks: ['coffee']
+                tasks: ['coffee', 'requirejs:development']
             html:
                 files: ['docs/**/*.html']
 
