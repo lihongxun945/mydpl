@@ -305,22 +305,6 @@ a:hover {
 .sui-icon-tmall {
   background: url("http://www.tmall.com/favicon.ico") no-repeat;
 }
-.sui-tip-success {
-  background-color: #dff0d8;
-  border-color: #94c569;
-}
-.sui-tip-error {
-  background-color: #f2dede;
-  border-color: #c7707f;
-}
-.sui-tip-warning {
-  background-color: #fcf8e3;
-  border-color: #edbd59;
-}
-.sui-tip-info {
-  background-color: #d9edf7;
-  border-color: #5bc7dc;
-}
 .sui-tip-min,
 .sui-tip-large {
   border: 1px solid #94c569;
@@ -1208,8 +1192,15 @@ a.sui-badge:focus {
 }
 .sui-table th {
   border-bottom: 1px solid #aec7e5;
-  background: url(http://a.tbcdn.cn/app/trade/img/itemlist_bg.gif) repeat-x 0 2px;
   border-top: 1px solid #b3d1ff;
+  background-color: #f7fbff;
+  background-image: -moz-linear-gradient(top, #ffffff, #eaf5ff);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#eaf5ff));
+  background-image: -webkit-linear-gradient(top, #ffffff, #eaf5ff);
+  background-image: -o-linear-gradient(top, #ffffff, #eaf5ff);
+  background-image: linear-gradient(to bottom, #ffffff, #eaf5ff);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffeaf5ff', GradientType=0);
 }
 .sui-table td {
   border-bottom: 1px solid #c9c9c9;
@@ -1290,7 +1281,7 @@ a.sui-badge:focus {
 .sui-input-min,
 .sui-input-large,
 .sui-input-xlarge {
-  padding: 2px 4px;
+  padding: 2px 8px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -1467,94 +1458,135 @@ a.sui-badge:focus {
 }
 .sui-input-control .sui-tip-min {
   margin-left: 12px;
+  display: none;
 }
 .sui-input-control.success input {
-  padding: 2px 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  outline: none;
-  line-height: 20px;
-  height: 20px;
-  width: 120px;
-  color: #333333;
-  border: 1px solid #999999;
-  background-color: #ffffff;
-  /*默认状态比较特殊，border是灰色，但是focus是蓝色的，所以在这里重载一下*/
-
-}
-.sui-input-control.success input.sui-input-date {
-  background-position-x: 106px;
-}
-.sui-input-control.success input:focus {
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #cccccc;
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #cccccc;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #cccccc;
-}
-.sui-input-control.success input:focus {
-  border-color: rgba(82, 168, 236, 0.8);
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
-  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6);
-}
-.sui-input-control.success input.disabled,
-.sui-input-control.success input[disable] {
-  color: #555555;
-  border: 1px solid #555555;
-  background-color: #eeeeee;
-}
-.sui-input-control.success input.disabled:focus,
-.sui-input-control.success input[disable]:focus {
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #888888;
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #888888;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #888888;
-}
-.sui-input-control.success input.success {
   color: #468847;
   border: 1px solid #468847;
   background-color: #ffffff;
 }
-.sui-input-control.success input.success:focus {
+.sui-input-control.success input:focus {
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b;
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b;
 }
-.sui-input-control.success input.error {
-  color: #b94a48;
-  border: 1px solid #b94a48;
-  background-color: #ffffff;
+.sui-input-control.success .sui-tip-min {
+  background-color: #dff0d8;
+  border-color: #94c569;
+  display: inline-block;
 }
-.sui-input-control.success input.error:focus {
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
-  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
+.sui-input-control.success .sui-tip-min > .sui-icon {
+  display: inline-block;
+  background: url("http://a.tbcdn.cn/apps/tmall/mui/msg/img/msg.png") no-repeat;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  background-position: -64px -29px;
+  background-position: -64px -54px;
+  vertical-align: -3px;
+  /*放在上面 优先级不够*/
+
 }
-.sui-input-control.success input.warning {
+.sui-input-control.warning input {
   color: #c09853;
   border: 1px solid #c09853;
   background-color: #ffffff;
 }
-.sui-input-control.success input.warning:focus {
+.sui-input-control.warning input:focus {
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #dbc59e;
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #dbc59e;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #dbc59e;
 }
-.sui-input-control.success input.info {
+.sui-input-control.warning .sui-tip-min {
+  background-color: #fcf8e3;
+  border-color: #edbd59;
+  display: inline-block;
+}
+.sui-input-control.warning .sui-tip-min > .sui-icon {
+  display: inline-block;
+  background: url("http://a.tbcdn.cn/apps/tmall/mui/msg/img/msg.png") no-repeat;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  background-position: -64px -29px;
+  background-position: -64px -106px;
+  vertical-align: -3px;
+  /*放在上面 优先级不够*/
+
+}
+.sui-input-control.error input {
+  color: #b94a48;
+  border: 1px solid #b94a48;
+  background-color: #ffffff;
+}
+.sui-input-control.error input:focus {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
+}
+.sui-input-control.error .sui-tip-min {
+  background-color: #f2dede;
+  border-color: #c7707f;
+  display: inline-block;
+}
+.sui-input-control.error .sui-tip-min > .sui-icon {
+  display: inline-block;
+  background: url("http://a.tbcdn.cn/apps/tmall/mui/msg/img/msg.png") no-repeat;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  background-position: -64px -29px;
+  vertical-align: -3px;
+  /*放在上面 优先级不够*/
+
+}
+.sui-input-control.info input {
   color: #3a87ad;
   border: 1px solid #3a87ad;
   background-color: #ffffff;
 }
-.sui-input-control.success input.info:focus {
+.sui-input-control.info input:focus {
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7ab5d3;
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7ab5d3;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7ab5d3;
 }
-.sui-input-control.success input.sui-input-date {
-  background: url(http://img03.taobaocdn.com/tps/i3/T1cJ4PXfXGXXXXXXXX-16-13.gif) no-repeat 106px 5px;
+.sui-input-control.info .sui-tip-min {
+  background-color: #d9edf7;
+  border-color: #5bc7dc;
+  display: inline-block;
 }
-.sui-input-control.success .sui-tip-min {
-  background-color: #dff0d8;
-  border-color: #94c569;
+.sui-input-control.info .sui-tip-min > .sui-icon {
+  display: inline-block;
+  background: url("http://a.tbcdn.cn/apps/tmall/mui/msg/img/msg.png") no-repeat;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  background-position: -64px -29px;
+  background-position: -64px -82px;
+  vertical-align: -3px;
+  /*放在上面 优先级不够*/
+
+}
+.sui-hero {
+  border: 1px solid #aec7e5;
+}
+.sui-hero .sui-hero-title {
+  border-bottom: 1px solid #aec7e5;
+  padding: 6px 12px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #f7fbff;
+  background-image: -moz-linear-gradient(top, #ffffff, #eaf5ff);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#eaf5ff));
+  background-image: -webkit-linear-gradient(top, #ffffff, #eaf5ff);
+  background-image: -o-linear-gradient(top, #ffffff, #eaf5ff);
+  background-image: linear-gradient(to bottom, #ffffff, #eaf5ff);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffeaf5ff', GradientType=0);
+}
+.sui-hero .sui-hero-content {
+  padding: 12px;
 }
 .sui-placeholder-wrap {
   position: relative;

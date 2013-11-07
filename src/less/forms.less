@@ -20,7 +20,7 @@
 .sui-input-large,
 .sui-input-xlarge,
 {
-    padding: 2px 4px;
+    padding: 2px 8px;
     .border-radius(@inputBorderRadius);
     outline: none;
     line-height: @lineHeight;
@@ -75,14 +75,43 @@
     margin: @comMarginMin 0;
     .sui-tip-min {
         margin-left: @comMarginMin;
+        display: none;
     }
 
     &.success {
         input {
-            .sui-input;
+            .sui-input.success;
         }
         .sui-tip-min {
-            .sui-tip-success;
+            .sui-tip-min.success;
+            display: inline-block;
+        }
+    }
+    &.warning {
+        input {
+            .sui-input.warning;
+        }
+        .sui-tip-min {
+            .sui-tip-min.warning;
+            display: inline-block;
+        }
+    }
+    &.error {
+        input {
+            .sui-input.error;
+        }
+        .sui-tip-min {
+            .sui-tip-min.error;
+            display: inline-block;
+        }
+    }
+    &.info {
+        input {
+            .sui-input.info;
+        }
+        .sui-tip-min {
+            .sui-tip-min.info;
+            display: inline-block;
         }
     }
 }

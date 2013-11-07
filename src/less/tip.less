@@ -1,38 +1,26 @@
-.sui-tip-success {
-    background-color: @successBackground;
-    border-color: @successBorder;
-}
-.sui-tip-error {
-    background-color: @errorBackground;
-    border-color: @errorBorder;
-}
-
-.sui-tip-warning {
-    background-color: @warningBackground;
-    border-color: @warningBorder;
-}
-.sui-tip-info {
-    background-color: @infoBackground;
-    border-color: @infoBorder;
-}
-
 .sui-tip-min,
 .sui-tip-large
 {
     border: 1px solid @successBorder;
     &.success {
-        .sui-tip-success;
+        background-color: @successBackground;
+        border-color: @successBorder;
     }
     &.error {
-        .sui-tip-error;
+        background-color: @errorBackground;
+        border-color: @errorBorder;
     }
-        
+
     &.warning {
-        .sui-tip-warning;
+        background-color: @warningBackground;
+        border-color: @warningBorder;
     }
     &.info {
-        .sui-tip-info;
+        background-color: @infoBackground;
+        border-color: @infoBorder;
     }
+
+
 }
 .sui-tip-min {
     padding: 2px 10px 2px 5px;
