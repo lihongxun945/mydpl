@@ -1,5 +1,5 @@
-# 这是什么
-SUI
+# SUI 是什么
+常用组件
 
 # 用到了这些
 
@@ -41,8 +41,6 @@ SUI
     - templates/ 模板
         - layout.mustache
         - pages/ 每个页面都放在这里
-
-**注意，其中的demo可以自行删除**
 
 # Grunt 使用
 Grunt 已经配置了如下几个任务
