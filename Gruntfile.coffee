@@ -12,12 +12,12 @@ module.exports = (grunt) ->
         less:
             development:
                 src: '<%= less_root %>/entry.less'
-                dest: '<%= css_root %>/app.css'
+                dest: '<%= css_root %>/sui.css'
             production:
                 options:
                     compress: true
                 src: '<%= less_root%>/entry.less'
-                dest: '<%= css_root%>/app.min.css'
+                dest: '<%= css_root%>/sui.min.css'
         coffee:
             compile:
                 expand: true
@@ -35,7 +35,7 @@ module.exports = (grunt) ->
                     include: 'entry'
                     insertRequire: ['entry']
                     mainConfigFile: "<%= js_root%>/requirejs-config.js"
-                    out: "<%= js_root %>/app.js"
+                    out: "<%= js_root %>/sui.js"
                     wrap: true
             production:
                 options:
@@ -45,7 +45,7 @@ module.exports = (grunt) ->
                     insertRequire: ['entry']
                     optimize: "uglify2"
                     mainConfigFile: "<%= js_root %>/requirejs-config.js"
-                    out: "<%= js_root %>/app.min.js"
+                    out: "<%= js_root %>/sui.min.js"
                     wrap: true
         qunit:
             all: ['<%= js_root %>/tests/**/*.html']
@@ -75,6 +75,6 @@ module.exports = (grunt) ->
         done = this.async()
         child = exec 'node docs/build', (e)-> done()
 
-    grunt.registerTask 'default', ['less:development', 'coffee', 'qunit', 'requirejs:development']
-    grunt.registerTask 'production', ['less:production', 'coffee', 'qunit', 'requirejs:production']
+    grunt.registerTask 'default', ['less:development', 'coffee', 'qunit', 'requirejs:development', 'hogan']
+    grunt.registerTask 'production', ['less:production', 'coffee', 'qunit', 'requirejs:production', 'hogan']
     grunt.registerTask 'test', ['qunit']
