@@ -1,20 +1,37 @@
+.sui-tip-success {
+    background-color: @tipSuccessBg;
+    border-color: @tipSuccessBorder;
+}
+.sui-tip-error {
+    background-color: @tipErrorBg;
+    border-color: @tipErrorBorder;
+}
+
+.sui-tip-warning {
+    background-color: @tipWarningBg;
+    border-color: @tipWarningBorder;
+}
+.sui-tip-info {
+    background-color: @tipInfoBg;
+    border-color: @tipInfoBorder;
+}
+
 .sui-tip-min,
 .sui-tip-large
 {
-    background-color: @tipSuccessBg;
     border: 1px solid @tipSuccessBorder;
+    &.success {
+        .sui-tip-success;
+    }
     &.error {
-        background-color: @tipErrorBg;
-        border-color: @tipErrorBorder;
+        .sui-tip-error;
     }
         
     &.warning {
-        background-color: @tipWarningBg;
-        border-color: @tipWarningBorder;
+        .sui-tip-warning;
     }
     &.info {
-        background-color: @tipInfoBg;
-        border-color: @tipInfoBorder;
+        .sui-tip-info;
     }
 }
 .sui-tip-min {
@@ -23,32 +40,35 @@
     vertical-align: middle;
     height: 16px;
     line-height: 16px;
+    &>.sui-icon {
+        display: none;
+    }
     &.error {
-        .sui-icon-error-s {
-            display: inline-block;
+        >.sui-icon {
+            .sui-icon-error-s;
+            vertical-align: -3px; /*放在上面 优先级不够*/
         }
     }
         
     &.warning {
-        .sui-icon-light-s {
-            display: inline-block;
+        > .sui-icon {
+            .sui-icon-light-s;
+            vertical-align: -3px; /*放在上面 优先级不够*/
         }
     }
     &.info {
-        .sui-icon-info-s {
-            display: inline-block;
+        >.sui-icon {
+            .sui-icon-info-s;
+            vertical-align: -3px; /*放在上面 优先级不够*/
         }
     }
-    &>i {
-        display: none;
-        vertical-align: -3px;;
-    }
-
     &.success {
-        .sui-icon-success-s {
-            display: inline-block;
+        > .sui-icon {
+            .sui-icon-success-s;
+            vertical-align: -3px; /*放在上面 优先级不够*/
         }
     }
+    
     span {
         vertical-align: 0;
     }
@@ -64,26 +84,30 @@
         margin-right: 10px;
     }
     &.success {
-        .sui-icon-success {
+        >.sui-icon {
+            .sui-icon-success;
             display: inline-block;
         }
     }
     &.warning {
-        .sui-icon-light {
+        >.sui-icon {
+            .sui-icon-light;
             display: inline-block;
         }
     }
     &.error {
-        .sui-icon-error {
+        >.sui-icon {
+            .sui-icon-error;
             display: inline-block;
         }
     }
     &.info {
-        .sui-icon-info {
+        >.sui-icon {
+            .sui-icon-info;
             display: inline-block;
         }
     }
-    &>i {
+    &>.sui-icon {
         float: left;
         display: none;
     }

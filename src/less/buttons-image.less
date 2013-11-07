@@ -42,19 +42,23 @@
     }
 }
 
+.btnState(@height, @width, @fontSize) {
+    height: @height;
+    line-height: @height;
+    width: @width;
+    font-size: @fontSize;
+
+    &.sui-btn-disabled, &[disabled] {
+        height: @height - 2px;
+        line-height: @height - 2px;
+    }
+}
+
 .sui-btn-l,
 .sui-btn-primary-l,
 .sui-btn-warning-l
 {
-    height: 25px;
-    line-height: 25px;
-    width: 98px;
-    font-size: @fontSize;
-
-    &.sui-btn-disabled {
-        height: 23px;
-        line-height: 23px;
-    }
+    .btnState(25px, 98px, @fontSize);
 }
 .sui-btn-l {
     color: @grayDark;
@@ -74,14 +78,7 @@
 .sui-btn-primary-m,
 .sui-btn-warning-m
 {
-    height: 25px;
-    line-height: 25px;
-    width: 79px;
-    font-size: @fontSize;
-    &.sui-btn-disabled {
-        height: 23px;
-        line-height: 23px;
-    }
+    .btnState(25px, 79px, @fontSize);
 }
 .sui-btn-m {
     color: @grayDark;
@@ -101,14 +98,7 @@
 .sui-btn-primary-s,
 .sui-btn-warning-s
 {
-    height: 20px;
-    line-height: 20px;
-    width: 50px;
-    font-size: @fontSizeSmall;
-    &.sui-btn-disabled {
-        height: 18px;
-        line-height: 18px;
-    }
+    .btnState(20px, 50px, @fontSizeSmall);
 }
 .sui-btn-s {
     color: @grayDark;
@@ -128,14 +118,7 @@
 .sui-btn-primary-sl,
 .sui-btn-warning-sl
 {
-    height: 20px;
-    line-height: 20px;
-    width: 60px;
-    font-size: @fontSizeSmall;
-    &.sui-btn-disabled {
-        height: 18px;
-        line-height: 18px;
-    }
+    .btnState(20px, 60px, @fontSizeSmall);
 }
 .sui-btn-sl {
     color: @grayDark;
@@ -155,14 +138,7 @@
 .sui-btn-primary-sf,
 .sui-btn-warning-sf
 {
-    height: 25px;
-    line-height: 25px;
-    width: 58px;
-    font-size: @fontSizeSmall;
-    &.sui-btn-disabled {
-        height: 23px;
-        line-height: 23px;
-    }
+    .btnState(25px, 58px, @fontSizeSmall);
 }
 .sui-btn-sf {
     color: @grayDark;

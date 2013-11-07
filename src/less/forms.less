@@ -1,0 +1,88 @@
+.inputState(@text, @border, @background) {
+    color: @text;
+    border: 1px solid @border;
+    background-color: @background;
+    &:focus {
+        @shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px lighten(@border, 20%);
+        .box-shadow(@shadow);
+    }
+}
+.inputSize(@width) {
+    width: @width;
+    &.sui-input-date {
+        background-position-x: @width - 14px;
+    }
+}
+
+.sui-input,
+.sui-input-small,
+.sui-input-min,
+.sui-input-large,
+.sui-input-xlarge,
+{
+    padding: 2px 4px;
+    .border-radius(@inputBorderRadius);
+    outline: none;
+    line-height: @lineHeight;
+    height: @lineHeight;
+    .inputSize(@inputWidth);
+    .inputState(@textColor, @grayLight, @inputBackground);
+
+    /*默认状态比较特殊，border是灰色，但是focus是蓝色的，所以在这里重载一下*/
+    &:focus {
+        border-color: rgba(82, 168, 236, 0.8);
+        .box-shadow(~"inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(82,168,236,.6)");
+    }
+
+    &.disabled, &[disable] {
+        .inputState(@gray, @gray, @inputDisabledBackground);
+    }
+
+    &.success {
+        .inputState(@successText, @successText, @white)
+    }
+    &.error {
+        .inputState(@errorText, @errorText, @white)
+    }
+    &.warning {
+        .inputState(@warningText, @warningText, @white)
+    }
+    &.info {
+        .inputState(@infoText, @infoText, @white)
+    }
+
+
+    &.sui-input-date {
+        background: url(http://img03.taobaocdn.com/tps/i3/T1cJ4PXfXGXXXXXXXX-16-13.gif) no-repeat (@inputWidth - 14px) 5px;
+    }
+}
+.sui-input-xlarge {
+    .inputSize(@inputWidthXLarge);
+}
+.sui-input-large {
+    .inputSize(@inputWidthLarge);
+}
+.sui-input-small {
+    .inputSize(@inputWidthSmall);
+}
+.sui-input-min {
+    .inputSize(@inputWidthMin);
+}
+
+
+/*control*/
+.sui-input-control {
+    margin: @comMarginMin 0;
+    .sui-tip-min {
+        margin-left: @comMarginMin;
+    }
+
+    &.success {
+        input {
+            .sui-input;
+        }
+        .sui-tip-min {
+            .sui-tip-success;
+        }
+    }
+}

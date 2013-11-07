@@ -1,3 +1,9 @@
+.iconState(@width, @height, @backgroundPosition) {
+    width: @width;
+    height: @height;
+    background-position: @backgroundPosition;
+}
+
 .sui-icon-error-s,
 .sui-icon-error,
 .sui-icon-success-s,
@@ -17,52 +23,37 @@
 {
     display: inline-block;
     background: url("http://a.tbcdn.cn/apps/tmall/mui/msg/img/msg.png") no-repeat;
-    background-position: -64px -29px;
-    width: 16px;
-    height: 16px;
     vertical-align: middle;
+    .iconState(16px, 16px, -64px -29px);
 }
 
 .sui-icon-error {
-    background-position: -1px -32px;
-    width: 32px;
-    height: 32px;
+    .iconState(32px, 32px, -1px -32px);
 }
 .sui-icon-question {
-    background-position: 0 -226px;
-    width: 32px;
-    height: 32px;
+    .iconState(32px, 32px, 0px -226px);
 }
 
 .sui-icon-light {
-    background-position: -5px -126px;
-    width: 24px;
-    height: 32px;
+    .iconState(24px, 32px, -5px -126px);
 }
 .sui-icon-success {
-    background-position: -1px -78px;
-    width: 32px;
-    height: 32px;
+    .iconState(32px, 32px, -1px -78px);
 }
 .sui-icon-info {
     background-position: -1px -177px;
     width: 32px;
     height: 32px;
+    .iconState(32px, 32px, -1px -177px);
 }
 .sui-icon-forbidden {
-    background-position: -1px -375px;
-    width: 32px;
-    height: 32px;
+    .iconState(32px, 32px, -1px -375px);
 }
 .sui-icon-sound {
-    background-position: -1px -330px;
-    width: 28px;
-    height: 24px;
+    .iconState(28px, 24px, -1px -330px);
 }
 .sui-icon-bell {
-    background-position: -1px -277px;
-    width: 32px;
-    height: 32px;
+    .iconState(32px, 32px, -1px -277px);
 }
 
 .sui-icon-error-s {
