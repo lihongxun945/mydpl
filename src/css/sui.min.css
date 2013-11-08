@@ -157,10 +157,10 @@ a.sui-label:hover,a.sui-label:focus,a.sui-badge:hover,a.sui-badge:focus{color:#f
 .sui-text-info{color:#3a87ad}
 .sui-table{width:100%}.sui-table th,.sui-table td{text-align:center;line-height:22px;padding:4px 0}
 .sui-table th{border-bottom:1px solid #aec7e5;border-top:1px solid #b3d1ff;background-color:#f7fbff;background-image:-moz-linear-gradient(top, #fff, #eaf5ff);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#eaf5ff));background-image:-webkit-linear-gradient(top, #fff, #eaf5ff);background-image:-o-linear-gradient(top, #fff, #eaf5ff);background-image:linear-gradient(to bottom, #fff, #eaf5ff);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffeaf5ff', GradientType=0)}
-.sui-table td{border-bottom:1px solid #c9c9c9}
-.sui-table.sui-table-striped tr:nth-child(even)>td{background-color:#f4f4f4}
+.sui-table td{border-bottom:1px solid #cce0ff}
+.sui-table.sui-table-striped tr:nth-child(even)>td{background-color:#fbfdff}
 .sui-table.sui-table-bordered th{border:1px solid #aec7e5}
-.sui-table.sui-table-bordered td{border:1px solid #c9c9c9}
+.sui-table.sui-table-bordered td{border:1px solid #cce0ff}
 .sui-tab-min,.sui-tab{margin:20px 0;padding-left:10px;height:32px;border-bottom:1px solid #B1D1FF}.sui-tab-min>li,.sui-tab>li{float:left;padding:4px;outline:0;position:relative}.sui-tab-min>li a,.sui-tab>li a{height:17px;line-height:17px;display:inline-block;text-decoration:none;padding:5px 10px;background:#e5f0ff;border-top-left-radius:3px;border-top-right-radius:3px;border:1px solid #b1d1ff;-webkit-box-shadow:0 1px 2px #fff inset;-moz-box-shadow:0 1px 2px #fff inset;box-shadow:0 1px 2px #fff inset}
 .sui-tab-min>li.active,.sui-tab>li.active{padding-top:0}.sui-tab-min>li.active a,.sui-tab>li.active a{height:21px;line-height:21px;border-bottom-color:#fff;background:#fff;font-size:16px;font-weight:bold;cursor:default;color:#666}
 .sui-tab-min{height:25px;font-size:12px;margin:12px 0}.sui-tab-min>li{padding:3px}.sui-tab-min>li a{height:15px;line-height:15px;padding:3px 10px}

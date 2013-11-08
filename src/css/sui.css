@@ -1203,16 +1203,16 @@ a.sui-badge:focus {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffeaf5ff', GradientType=0);
 }
 .sui-table td {
-  border-bottom: 1px solid #c9c9c9;
+  border-bottom: 1px solid #cce0ff;
 }
 .sui-table.sui-table-striped tr:nth-child(even) > td {
-  background-color: #f4f4f4;
+  background-color: #fbfdff;
 }
 .sui-table.sui-table-bordered th {
   border: 1px solid #aec7e5;
 }
 .sui-table.sui-table-bordered td {
-  border: 1px solid #c9c9c9;
+  border: 1px solid #cce0ff;
 }
 .sui-tab-min,
 .sui-tab {
