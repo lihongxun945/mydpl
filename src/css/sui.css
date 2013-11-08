@@ -1567,10 +1567,10 @@ a.sui-badge:focus {
   /*放在上面 优先级不够*/
 
 }
-.sui-hero {
+.sui-panel {
   border: 1px solid #aec7e5;
 }
-.sui-hero .sui-hero-title {
+.sui-panel .sui-panel-title {
   border-bottom: 1px solid #aec7e5;
   padding: 6px 12px;
   margin: 0;
@@ -1585,7 +1585,7 @@ a.sui-badge:focus {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffeaf5ff', GradientType=0);
 }
-.sui-hero .sui-hero-content {
+.sui-panel .sui-panel-content {
   padding: 12px;
 }
 .sui-placeholder-wrap {

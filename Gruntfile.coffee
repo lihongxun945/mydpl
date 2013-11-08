@@ -76,6 +76,7 @@ module.exports = (grunt) ->
         child = exec 'node docs/build', (e)-> done()
 
     grunt.registerTask 'glue', 'create sprite', ->
+        return
         done = this.async()
         child = exec 'cd src  && glue icon --less --css less --img sprite', (e)-> done()
 
