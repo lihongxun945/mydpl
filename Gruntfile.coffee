@@ -75,6 +75,10 @@ module.exports = (grunt) ->
         done = this.async()
         child = exec 'node docs/build', (e)-> done()
 
-    grunt.registerTask 'default', ['less:development', 'coffee', 'qunit', 'requirejs:development', 'hogan']
-    grunt.registerTask 'production', ['less:production', 'coffee', 'qunit', 'requirejs:production', 'hogan']
+    grunt.registerTask 'glue', 'create sprite', ->
+        done = this.async()
+        child = exec 'cd src  && glue icon --less --css less --img sprite', (e)-> done()
+
+    grunt.registerTask 'default', ['less:development', 'coffee', 'qunit', 'requirejs:development', 'hogan', 'glue']
+    grunt.registerTask 'production', ['less:production', 'coffee', 'qunit', 'requirejs:production', 'hogan', 'glue']
     grunt.registerTask 'test', ['qunit']

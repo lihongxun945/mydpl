@@ -9,6 +9,7 @@
 * less, 还默认引入了bootstrap中的三个文件normalize.less, variable.less, mixin.less，可以根据自己的喜好修改
 * qunit, 用于做单元测试
 * hogan, 文档模板，用来编译mustache
+* glue, 用于自动合并sprite,并生成less文件, 详情参考 [glue](http://glue.readthedocs.org/en/latest/quickstart.html)
 
 # 如何安装
 根目录下执行 `npm install` 。
@@ -48,6 +49,7 @@ Grunt 已经配置了如下几个任务
 - *watch*, 监听文件改动并自动编译代码，配好了livereload，只需要在html中引入对应js或者在浏览器中安装插件即可，参见demo.html
 - *default*, 编译合并js和css，执行qunit，但是不压缩代码，开发调试使用
 - *production*，功能同default, 不同的是会压缩代码，发布使用
+- *glue*, 自动合并sprite，只需要把图标放入icon文件夹并执行`grunt glue`命令，就会合并图片并生成less文件
 - *test*, qunit的别名，js代码必须通过qunit测试
 - *hogan*, 编译docs模板
 
